@@ -1,0 +1,13 @@
+BufferOverFlow.pml
+ClientServeur.pml
+DeadLock.pml
+LiveLock.pml
+UnspecifiedError
+philosophe.pml
+goat.pml (how akal riddle fil cour mta3 goat-wolve-farmer )
+Err.pml (exercice ill jebou fil ds ou mawjoud nafsou fil cour ) 
+Network.pml (mta3 reseau mawjoud fil cour ) 
+
+
+----
+hedhouma les code mta3 pml illi mawjoudin fil cour

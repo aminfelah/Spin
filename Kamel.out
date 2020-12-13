@@ -1,0 +1,44 @@
+spin -a  ClientServeur.pml
+gcc -DMEMLIM=1024 -O2 -DXUSAFE -DSAFETY -DNOCLAIM -w -o pan pan.c
+./pan -m10000  -e
+Pid: 9876
+pan:1: invalid end state (at depth 4)
+pan: wrote ClientServeur.pml1.trail
+
+(Spin Version 6.5.0 -- 1 July 2019)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (not selected)
+	assertion violations	+
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	+
+
+State-vector 28 byte, depth reached 8, errors: 1
+       10 states, stored
+        2 states, matched
+       12 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.000	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.291	actual memory usage for states
+   64.000	memory used for hash table (-w24)
+    0.343	memory used for DFS stack (-m10000)
+   64.539	total actual memory usage
+
+
+unreached in proctype client
+	ClientServeur.pml:15, state 11, "-end-"
+	(1 of 11 states)
+unreached in proctype serveur
+	ClientServeur.pml:26, state 11, "-end-"
+	(1 of 11 states)
+unreached in init
+	(0 of 3 states)
+
+pan: elapsed time 0.002 seconds
+To replay the error-trail, goto Simulate/Replay and select "Run"
+
+

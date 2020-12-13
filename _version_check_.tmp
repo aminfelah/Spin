@@ -1,0 +1,54 @@
+<html>
+<script async src='/cdn-cgi/bm/cv/2172558837/api.js'></script><body>
+<h2><tt>Spin Sources</tt></h2>
+<hr color=blue>
+<h3><tt>Current Version 6.4.9 (17 December 2018):</tt></h3>
+Starting in January 2019, the most recent version of the Spin source and binary distribution
+<br>
+is maintained on <a href="https://github.com/nimble-code/Spin">https://github.com/nimble-code/Spin</a>.
+<p>
+The github distribution includes all recent updates and bug-fixes, also in between main releases.
+<p>
+An archive of all Spin versions is also available at: <a href="http://spinroot.com/spin/Archive/">http://spinroot.com/spin/Archive/</a>.
+<!--
+<br>
+The github version is therefore typically more current than the tar-ball archives below.
+<br>
+But, in case you don't like github, the code for the last standard release is also below:
+<ul>
+  <li>Full distribution, with sources:	<a href="spin649.tar.gz">spin649.tar.gz</a> (519k)</li>
+  <li>C Sources only:	<a href="src649.tar.gz">src649.tar.gz</a> (296k)</li>
+  <li>Windows PC executable, iSpin, and documentation, but no sources: <a href="pc_spin649.zip">pc_spin649.zip</a> (478K)</li>
+  <li>GUIs:
+    <ul>
+    <li>ispin Version 1.1.4 (Tcl/Tk GUI for Spin Version 6): <a href="ispin.tcl">ispin.tcl</a>, source (225k)
+    </li>
+    <li>jSpin (Java GUI for Spin, by Moti Ben-Ari: <a href="http://code.google.com/archive/p/jspin/">jSpin</a> with source (625k)</li>
+    </ul>
+</ul>
+-->
+<p>
+<hr color=blue>
+<p>
+Other:
+<ul>
+<li>Spin homepage: <a href="http://spinroot.com/spin/">http://spinroot.com/</a></li>
+<li>Spin Precompiled executables: <a href="../Bin/index.html">../Bin/index.html</a></li>
+<li>An alternative LTL to never claim converter: <a href="ltl2ba.tar.gz">ltl2ba.tar.gz</a> (28k)</li>
+<li>Documentation for use of embedded C code: <a href="../Doc/spin4_ch17.pdf">spin4_ch17.pdf</a></li>
+<li>Spin Model extractor from C code: <a href="http://spinroot.com/modex/">modex</a></li>
+<li>Swarm verification front-end to Spin: <a href="http://spinroot.com/swarm/">swarm</a></li>
+<li>Update history:
+	<ul>
+	<li><a href="../Doc/V6.Updates">Version 6 Updates (2010- now)</a></li>
+	<li><a href="../Doc/V5.Updates">Version 5 Updates (2007-2010)</a></li>
+	<li><a href="../Doc/V4.Updates">Version 4 Updates (2003-2007)</a></li>
+	<li><a href="../Doc/V3.Updates">Version 3 Updates (1997-2003)</a></li>
+	<li><a href="../Doc/V2.Updates">Version 2 Updates (1995-1997)</a></li>
+	<li><a href="../Doc/V1.Updates">Version 1 Updates (1991-1995)</a></li>
+	</ul></li>
+</ul>
+<hr color=blue>
+<font size=2>Last updated: 5 July 2019</font>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6009baddead10ff2',m:'1ad760bcee375c753fbf75d7f9e9e9b5adfb8038-1607800063-1800-AWWWYA3ZCnx0EmEnhDkyNg5zXVyyHkFeD09wON5xvNWrGcoam76bSEfFjyVzjiJyrvxSEtx4pFNvJ6GaYXpZoA1t9r9sd8HdHvldTvlgt80g6sXtc3s978fhOQjuLUVuOZdGfR7cZBKoMpCeO5pBspc=',s:[0x8740b6006d,0x495e04b852],}})();</script></body>
+</html>

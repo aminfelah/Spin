@@ -1,0 +1,37 @@
+
+(Spin Version 6.5.0 -- 1 July 2019)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (not selected)
+	assertion violations	+
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	+
+
+State-vector 20 byte, depth reached 32, errors: 0
+       41 states, stored
+       25 states, matched
+       66 transitions (= stored+matched)
+       56 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.001	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.281	actual memory usage for states
+   64.000	memory used for hash table (-w24)
+    0.343	memory used for DFS stack (-m10000)
+   64.539	total actual memory usage
+
+
+unreached in proctype cross_river
+	goat.pml:35, state 64, "-end-"
+	(1 of 64 states)
+unreached in init
+	(0 of 2 states)
+unreached in claim nice
+	_spin_nvr.tmp:4, state 6, "(!(((((ferryman==destination_side)&&(wolf==destination_side))&&(goat==destination_side))&&(cabbage==destination_side))))"
+	_spin_nvr.tmp:4, state 6, "((!(!((((wolf==goat)&&(ferryman!=wolf))||((goat==cabbage)&&(ferryman==goat)))))&&!(((((ferryman==destination_side)&&(wolf==destination_side))&&(goat==destination_side))&&(cabbage==destination_side)))))"
+	_spin_nvr.tmp:9, state 10, "-end-"
+	(2 of 10 states)
+
+pan: elapsed time 0 seconds

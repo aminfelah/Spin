@@ -1,0 +1,25 @@
+digraph p_calc {
+size="8,10";
+  GT [shape=box,style=dotted,label="calc"];
+  GT -> S21;
+	S21 -> S2  [color=black,style=bold,label="f?operator,s"];
+	S21 -> S20  [color=black,style=bold,label="f?value,s"];
+	S2 -> S3  [color=black,style=bold,label="(run calc(me))"];
+	S3 -> S4  [color=black,style=bold,label="me?lft"];
+	S4 -> S5  [color=black,style=bold,label="(run calc(me))"];
+	S5 -> S17  [color=black,style=bold,label="me?rgt"];
+	S17 -> S7  [color=black,style=solid,label="((s==43))"];
+	S17 -> S9  [color=black,style=solid,label="((s==45))"];
+	S17 -> S11  [color=black,style=solid,label="((s==42))"];
+	S17 -> S13  [color=black,style=solid,label="((s==47))"];
+	S17 -> S16  [color=black,style=solid,label="else"];
+	S7 -> S23  [color=black,style=bold,label="you!(lft+rgt)"];
+	S23 -> S0  [color=black,style=solid,label="-end-"];
+  S23 [color=blue,style=bold,shape=box];
+	S9 -> S23  [color=black,style=bold,label="you!(lft-rgt)"];
+	S11 -> S23  [color=black,style=bold,label="you!(lft*rgt)"];
+	S13 -> S14  [color=black,style=solid,label="assert((rgt!=0))"];
+	S14 -> S23  [color=black,style=bold,label="you!(lft/rgt)"];
+	S16 -> S23  [color=black,style=solid,label="assert(0)"];
+	S20 -> S23  [color=black,style=bold,label="you!s"];
+}

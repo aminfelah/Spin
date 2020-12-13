@@ -1,0 +1,47 @@
+digraph p_Emetteur {
+size="8,10";
+  GT [shape=box,style=dotted,label="Emetteur"];
+  GT -> S1;
+	S1 -> S7  [color=black,style=bold,label="Fne!T0"];
+	S7 -> S1  [color=black,style=bold,label="Fne?A0"];
+	S7 -> S9  [color=black,style=bold,label="Fne?A1"];
+	S9 -> S15  [color=black,style=bold,label="Fen!T1"];
+	S15 -> S1  [color=black,style=bold,label="Fne?A0"];
+	S15 -> S9  [color=black,style=bold,label="Fne?A1"];
+}
+digraph p_Reseau {
+size="8,10";
+  GT [shape=box,style=dotted,label="Reseau"];
+  GT -> S9;
+	S9 -> S11  [color=black,style=bold,label="Frn?A0"];
+	S9 -> S17  [color=black,style=bold,label="Fen?T1"];
+	S9 -> S19  [color=black,style=bold,label="Frn?A1"];
+	S9 -> S25  [color=black,style=bold,label="Fen?T0"];
+	S11 -> S9  [color=black,style=bold,label="Fne!A0"];
+	S17 -> S9  [color=black,style=bold,label="Fnr!T1"];
+	S17 -> S9  [color=black,style=bold,label="Fnr!T1B"];
+	S19 -> S9  [color=black,style=bold,label="Fne!A1"];
+	S25 -> S9  [color=black,style=bold,label="Fnr!T0"];
+	S25 -> S9  [color=black,style=bold,label="Fnr!T0B"];
+}
+digraph p_Recepteur {
+size="8,10";
+  GT [shape=box,style=dotted,label="Recepteur"];
+  GT -> S5;
+	S5 -> S7  [color=black,style=bold,label="Fnr?T0"];
+	S5 -> S15  [color=black,style=bold,label="Fnr?T0B"];
+	S7 -> S13  [color=black,style=bold,label="Frn!A1"];
+	S13 -> S15  [color=black,style=bold,label="Fnr?T1"];
+	S13 -> S7  [color=black,style=bold,label="Fnr?T1B"];
+	S15 -> S5  [color=black,style=bold,label="Frn!A0"];
+}
+digraph init {
+size="8,10";
+  GT [shape=box,style=dotted,label="init"];
+  GT -> S1;
+	S1 -> S2  [color=black,style=solid,label="(run Reseau())"];
+	S2 -> S3  [color=black,style=solid,label="(run Emetteur())"];
+	S3 -> S4  [color=black,style=solid,label="(run Recepteur())"];
+	S4 -> S0  [color=black,style=solid,label="-end-"];
+  S4 [color=blue,style=bold,shape=box];
+}

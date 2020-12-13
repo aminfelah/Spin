@@ -1,0 +1,11 @@
+digraph p_Recepteur {
+size="8,10";
+  GT [shape=box,style=dotted,label="Recepteur"];
+  GT -> S5;
+	S5 -> S7  [color=black,style=bold,label="Fnr?T0"];
+	S5 -> S15  [color=black,style=bold,label="Fnr?T0B"];
+	S7 -> S13  [color=black,style=bold,label="Frn!A1"];
+	S13 -> S15  [color=black,style=bold,label="Fnr?T1"];
+	S13 -> S7  [color=black,style=bold,label="Fnr?T1B"];
+	S15 -> S5  [color=black,style=bold,label="Frn!A0"];
+}
